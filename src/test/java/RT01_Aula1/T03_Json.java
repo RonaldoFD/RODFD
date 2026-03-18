@@ -92,10 +92,8 @@ public class T03_Json {
                 .then()
                 .statusCode(200)
                 .body("$", hasSize(3))
-                .body("name", hasItems("João da Silva", "Maria Joaquina","Ana Maria"))
+                .body("name", hasItems("João da Silva", "Maria Joaquina","Ana Júlia"))
                 .body("age[1]", is(25))
-
-
         ;
 
     }
